@@ -836,7 +836,7 @@
                 var blockIndex = 0;
                 for (var i=0; i<cur.blocksLen; i+=2) {
                   game._filled.add(x + blocks[i], y + blocks[i+1], cur.blockType, cur.blockVariation, blockIndex, cur.orientation);
-                  if (y + blocks[i] < 0) {
+                  if (y + blocks[i+1] < 0) {
                     gameOver = true;
                   }
                   blockIndex++;
